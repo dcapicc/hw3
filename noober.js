@@ -13,16 +13,16 @@ document.addEventListener('DOMContentLoaded', async function() {
   // 🔥 YOUR CODE GOES HERE 🔥
   // Write the recipe (algorithm) in the comments. Then, write the code.
   
-  // Store passenger details
-  let riderInfo = ride.passengerDetails
+  // Store passenger details - DON'T NEED
+  // let riderInfo = ride.passengerDetails
   // Store Rider First Name
   let riderFirstName = ride.passengerDetails.first
   // Store Rider Last Name
   let riderLastName = ride.passengerDetails.last
   // Store Rider Phone Number
   let riderPhone = ride.passengerDetails.phoneNumber
-  // Store Pick Up Location
-  let riderPickUp = ride.pickupLocation
+  // Store Pick Up Location - DON'T NEED
+  // let riderPickUp = ride.pickupLocation
   // Store Pick Up Address
   let riderAddress = ride.pickupLocation.address
   // Store Pick Up City
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', async function() {
   let riderState = ride.pickupLocation.state
   // Store Pick Up Zip
   let riderZip = ride.pickupLocation.zip 
-  // Store Drop Off Location
-  let riderDrop = ride.dropoffLocation
+  // Store Drop Off Location - DON'T NEED
+  // let riderDrop = ride.dropoffLocation
   // Store Drop Off Address
   let riderDropAddress = ride.dropoffLocation.address
   // Store Drop Off City
@@ -53,13 +53,10 @@ document.addEventListener('DOMContentLoaded', async function() {
 } else if (passengers > 3 && purple == false) {car = carTypes[1]
 } else {car = carTypes[0]}
 
+// Full human readable display
+  console.log(`${car} Passenger:${riderFirstName} ${riderLastName} - ${riderPhone}. Pickup at ${riderAddress}, ${riderCity}, ${riderState}, ${riderZip}. Drop off at ${riderDropAddress}, ${riderDropCity}, ${riderDropState}, ${riderDropZip}.`)
 
-  console.log(`${car}`)
 
-
-
-  
-  
-
+// BOOM!
   // 🔥 YOUR CODE ENDS HERE 🔥
 })
